@@ -12,7 +12,10 @@ int gpio_export(char *pin) {
 }
 int gpio_unexport(char *pin) {
   int fd;
-
+  // clang-format off
+            int kkk;
+  // clang-format on
+  int y;
   fd = open("/sys/class/gpio/unexport", O_WRONLY);
   if (fd == -1) {
     printf("Cannot open the unexport file\n");
@@ -86,6 +89,7 @@ int gpio_write(char *pin, char *value) {
 }
 char gpio_read(char *pin) {
   int fd;
+  int x;
   char str[MAX_BUF];
   char value;
   char ch;

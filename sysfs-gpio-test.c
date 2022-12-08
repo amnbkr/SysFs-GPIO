@@ -12,6 +12,7 @@ int pressed;
 int pressed_confidenece_level;
 int released_confidence_level;
 enum { YES, NO } e;
+int k;
 int main(void) {
   /*Polling */
   struct pollfd fdset[2];
