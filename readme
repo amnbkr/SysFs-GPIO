@@ -1,1 +1,1 @@
-hello
+GPIO control using the sysfs interface provided by the Linux kernel
